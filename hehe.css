@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/Wait-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+#mainpage{
+    display: block;
+}
+.waiting{
+    top: 50%;
+    margin-left: 2rem;
+    position: absolute;
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.waiting h1{
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.waiting p{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 150;
+}
+
+.launch-time{
+    top: 50%;
+    padding: 2rem;
+    display: flex;
+    position: absolute;
+}
+
+.launch-time div{
+    flex-basis: 100px;
+}
+
+.launch-time div p{
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: -14px;
+    padding-right: 2rem;
+}
+
+.launch-time div span{
+    color: #fff;
+}
+
+#celebrate{
+    display: none;
+}
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#celebrate h1{
+    color: #fff;
+}
