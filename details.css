@@ -39,5 +39,8 @@ box-shadow:  20px 20px 60px #baafbd,
 }
 
 a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     text-decoration: none;
 }

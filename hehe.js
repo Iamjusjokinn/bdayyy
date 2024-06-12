@@ -198,24 +198,3 @@ function openDetails(event, element) {
     const encodedMessage = encodeURIComponent(message);
     window.location.href = `details.html?message=${encodedMessage}`;
 }
-
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    let currentIndex = 0;
-    const cards = document.querySelectorAll('.card__article');
-    const totalCards = cards.length;
-
-    function showCard(index) {
-        cards.forEach((card, i) => {
-            card.style.transform = `translateX(${100 * (i - index)}%)`;
-        });
-    }
-
-    function autoSlide() {
-        currentIndex = (currentIndex + 1) % totalCards;
-        showCard(currentIndex);
-    }
-
-    setInterval(autoSlide, 3000); // Change slide every 3 seconds
-    showCard(currentIndex); // Show the first card initially
-});

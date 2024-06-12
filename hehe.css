@@ -306,13 +306,12 @@ img {
 .card__container {
   display: grid;
   row-gap: 3.5rem;
-  padding: 25px;
+  padding: 15px;
 }
 
 .img-container{
   display: flex;
   width: 100%;
-  /* animation: slide 8s infinite; */
 }
 
 .card__article {
@@ -464,18 +463,3 @@ img {
   }
 }
 
-
-/* @keyframes slide{
-  0%{
-    transform: translateX(100%);
-  }
-  33%{
-    transform: translateX(0%);
-  }
-  66%{
-    transform: translateX(-100%);
-  }
-  100%{
-    transform: translateX(-200%);
-  }
-} */
