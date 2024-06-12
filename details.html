@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="./details.css">
+</head>
+<body>
+    <div id="details-container">
+        <p id="message"></p>
+        <a href="index.html">Go Back</a>
+    </div>
+    <script>
+        // Extract the message from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const message = urlParams.get('message');
+
+        // Display the message
+        document.getElementById('message').textContent = message;
+    </script>
+</body>
+</html>

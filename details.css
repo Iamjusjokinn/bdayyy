@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-image: url(./images/pexels-minan1398-813269.jpg); */
+    background-color: #dbcede;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+}
+
+div{
+    max-height: 100vh;
+}
+#details-container{
+    text-align: justify;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    background-image: linear-gradient(transparent 12%, currentColor 30%, currentColor 70%, transparent 86%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-attachment: fixed;
+}
+
+#message{
+    padding: 50px;
+    border-radius: 50px;
+background: #dbcede;
+box-shadow:  20px 20px 60px #baafbd,
+             -20px -20px 60px #fcedff;
+    margin: 100px 0;
+    font-size: 20px;
+    color:rgba(0, 0, 0, 0.674);
+}
+
+a{
+    text-decoration: none;
+}
