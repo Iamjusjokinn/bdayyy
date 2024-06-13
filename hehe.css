@@ -321,6 +321,8 @@ img {
 
 .card__img {
   border-radius: 1.5rem;
+  height: 535px;
+  width: 306px;
 }
 
 .card__data {
@@ -343,7 +345,7 @@ img {
   font-size: var(--small-font-size);
   margin-bottom: .25rem;
 
-  --max-lines: 5;
+  --max-lines: 3;
   --line-height: 1.4;
 
   max-height: calc(var(--max-lines) * 1em * var(--line-height));
@@ -351,6 +353,16 @@ img {
 
   overflow: hidden;
   position: relative;
+}
+
+.card__description::before{
+  content: '';
+  position: absolute;
+  height: calc(1.5em * var(--line-height));
+  width: 100%;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, white);
 }
 
 .card__title {
